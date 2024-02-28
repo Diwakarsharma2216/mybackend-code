@@ -1,0 +1,26 @@
+<!-- views/register.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="/register" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="userprofile">Profile Picture:</label>
+        <input type="file" id="userprofile" name="userprofile" accept="image/*" required>
+
+        <button type="submit">Register</button>
+    </form>
+    <img src="/uploads/1708509190445-wallpaperflare.com_wallpaper.jpg" alt="err">
+    
+</body>
+</html>
